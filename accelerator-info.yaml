@@ -1,0 +1,19 @@
+id: fcd85958-a6c4-4968-b3c9-1ab48b590f63
+timestamp: 2023-08-09T19:59:06Z
+username: dkhopade
+source: TAP-GUI
+accelerator:
+  name: python-function
+  source:
+    image: registry.tanzu.vmware.com/tanzu-application-platform/tap-packages@sha256:06ef79ba0d2b42cce6f630525e7844f50b8aa4b4ddd75bf47b12bd772f9ff925
+fragments:
+  - name: tap-workload
+    source:
+      image: registry.tanzu.vmware.com/tanzu-application-platform/tap-packages@sha256:dbf0dedb6848ad8a7704c1c19465a1ddae9039b0e63c1dd0df3e2ed9cbda6093
+options:
+  bsGitBranch: main
+  bsGitRepository: github.com?owner=dkhopade&repo=python-function-with-git-3
+  functionName: main
+  includeTap: true
+  interfaceType: http
+  projectName: python-function-with-git-3
